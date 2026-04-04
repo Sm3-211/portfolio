@@ -1,0 +1,6 @@
+title: Portfolio
+baseurl: ""
+url: ""
+collections:
+    projects: 
+        output: true

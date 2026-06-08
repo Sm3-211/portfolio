@@ -61,6 +61,14 @@ h1 { margin-bottom: 0.5rem; }
 p { margin-bottom: 1rem; }
 
 /* ==========================
+   PAGE CONTENT WRAPPER
+========================== */
+
+.page-content {
+    padding: 0 2rem; /* consistent horizontal spacing for all pages */
+}
+
+/* ==========================
    NAVBAR
 ========================== */
 
@@ -73,10 +81,9 @@ nav {
     justify-content: space-between;
     padding: 0.75rem 1rem;
     border-bottom: 1px solid var(--base02);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     z-index: 100;
 
-    /* added safety for responsiveness */
     flex-wrap: wrap;
 }
 
@@ -134,7 +141,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem;  /* internal padding */
     border-bottom: 1px solid var(--base02);
     text-decoration: none;
     transition: background 0.15s ease;
@@ -177,7 +184,6 @@ header {
     margin-bottom: 0.5rem;
 }
 
-/* shared typography for both */
 .project-date,
 .project-tags {
     color: var(--base01);
@@ -185,7 +191,6 @@ header {
     margin: 0;
 }
 
-/* ensure tags behave like inline text */
 .project-tags {
     text-align: right;
     white-space: nowrap;
@@ -193,7 +198,6 @@ header {
     text-overflow: ellipsis;
 }
 
-/* project page spacing tweak */
 .project-detail .project-meta {
     justify-content: flex-start;
     gap: 1.5rem;
@@ -259,7 +263,7 @@ header {
 ========================== */
 
 footer {
-    margin-top: 6rem;
+    margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid var(--base02);
     color: var(--base01);
@@ -293,8 +297,6 @@ footer {
         position: static;
     }
 
-    /* IMPORTANT CHANGE:
-       keep nav horizontal instead of stacking */
     nav {
         flex-direction: row;
         align-items: center;
